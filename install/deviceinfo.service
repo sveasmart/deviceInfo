@@ -1,4 +1,4 @@
-# systemd service script for the modbusmeter
+# systemd service script for this app
 # https://www.freedesktop.org/software/systemd/man/bootup.html
 # https://www.freedesktop.org/software/systemd/man/systemd.service.html
 

@@ -5,8 +5,8 @@ This app shows info about the device on the rasp display.
 The info to display is set in the config.
 * customerName
 * customerAddress
-* supportInfoRow1
-* supportInfoRow2
+* supportInfoLine1
+* supportInfoLine2
 
 These four things are displayed on rows 0-3 respectively.
 Example:

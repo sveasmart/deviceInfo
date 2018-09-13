@@ -1,0 +1,15 @@
+# systemd service script for the modbusmeter
+# https://www.freedesktop.org/software/systemd/man/bootup.html
+# https://www.freedesktop.org/software/systemd/man/systemd.service.html
+
+[Unit]
+Description=DeviceInfo
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/apps/deviceinfo/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

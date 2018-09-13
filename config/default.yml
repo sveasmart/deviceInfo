@@ -1,0 +1,37 @@
+#------------------------------------------------
+# This is the default configuration for deviceInfo.
+# Override it by creating a local.yml next to it.
+# The config isn't hot-reloaded, so you need to restart
+# the meter if you change anything.
+#------------------------------------------------
+
+# The URL that will be used for the QR code that is displayed
+# The deviceId will be passed along using an # (anchor tag).
+# Example: http://my.server/register#abcdefgh
+registrationBaseUrl: "http://localhost:3000/register"
+
+# Which file contains the device ID
+deviceIdPath:
+
+# Use this to override deviceIdPath with a specific device Id instead.
+# NOTE: deviceIdPath or deviceId must be set!
+deviceId:
+
+# If true, I log everything that I write to the display
+logDisplay: "false"
+
+# Which port the display RPC server is listening on.
+# https://github.com/sveasmart/display
+# Leave it blank or 0 if we should just use console.log instead of trying to talk to a display
+displayRpcPort: 5000
+
+# Which tabs on the display to display stuff on
+# (only relevant if displayRpcPort is given)
+mainDisplayTab: "tab0"
+qrCodeDisplayTab: "tab2"
+
+# What to show on the display, on rows 0-3 respectively.
+customerName:
+customerAddress:
+supportInfoLine1:
+supportInfoline2:

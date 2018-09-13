@@ -30,8 +30,16 @@ displayRpcPort: 5000
 mainDisplayTab: "tab0"
 qrCodeDisplayTab: "tab2"
 
-# What to show on the display, on rows 0-3 respectively.
+# Customer name is shown on row 0
 customerName:
+
+# Customer or Device address is shown on row 1.
+# If both are available, Device address is shown.
 customerAddress:
+deviceAddress:
+
+# This is shown on row 2
 supportInfoLine1:
+
+# This is shown on row 3
 supportInfoline2:

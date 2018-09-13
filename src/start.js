@@ -5,13 +5,17 @@ const fs = require('fs')
 /**
  * Retries on failure.
  */
-function showCustomerInfo() {
-  if (!config.customerName && !config.customerAddress) {
+function showNameAndAddress() {
+  if (!config.customerName && !config.customerAddress && !config.deviceAddress) {
     displayLine(0, "ERROR!")
     displayLine(1, "Not registered")
   } else {
     displayLine(0, config.customerName)
-    displayLine(1, config.customerAddress)
+    if (config.deviceAddress) {
+      displayLine(1, config.deviceAddress)
+    } else {
+      displayLine(1, config.customerAddress)
+    }
   }
   displayLine(2, config.supportInfoLine1)
   displayLine(3, config.supportInfoLine2)
@@ -70,5 +74,5 @@ if (config.displayRpcPort && config.displayRpcPort != 0 && config.displayRpcPort
   displayClient = null
 }
 
-showCustomerInfo()
+showNameAndAddress()
 showQrCode()

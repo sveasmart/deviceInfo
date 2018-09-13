@@ -20,6 +20,7 @@ exports.loadConfig = function() {
 
     customerName: getOptionalString('customerName'),
     customerAddress: getOptionalString('customerAddress'),
+    deviceAddress: getOptionalString('deviceAddress'),
     supportInfoLine1: getOptionalString('supportInfoLine1'),
     supportInfoLine2: getOptionalString('supportInfoLine2')
   }
